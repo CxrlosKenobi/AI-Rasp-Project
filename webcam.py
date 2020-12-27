@@ -1,13 +1,15 @@
+# Usar picamera
 import subprocess
 import datetime
 import time
+import os
 from subprocess import Popen, PIPE
 
-homeDIr = '/home/pi/';
-destDir = '/mnt/usb/uwphotos/';
+homeDIr = '/home/pi/AI';
+destDir = '/home/pi/AI/uwphotos/';
 
 count = 0;
-limit = 5;
+limit = 2;
 
 while (count < limit):
     outImg = datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S');
@@ -24,10 +26,8 @@ while (count < limit):
     time.sleep(5);
 
     # Call 'mv' to move the image to the USB drive
-    process = Popen(mvPic, stdout=PIPE, stderr=PIPE);
-    stdout, stderr = process.communicate();
     print('---STDERR---');
-    print(stderr.decode('utf-8'));
+    os.system('mv ' + outImg + ' uwphotos')
     print('**** End ****');
 
     count += 1;
