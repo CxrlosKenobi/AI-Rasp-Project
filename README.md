@@ -1,4 +1,6 @@
 # AI-Rasp-Project
+[![Project Status: WIP](https://www.repostatus.org/badges/latest/wip.svg)](https://www.repostatus.org/#wip)
+
 <img src="assets/specs.png" align="center"/>
 
 ## Steps
