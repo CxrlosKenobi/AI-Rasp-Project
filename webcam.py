@@ -5,6 +5,9 @@ import time
 import os
 from subprocess import Popen, PIPE
 
+#https://makersportal.com/blog/2019/4/23/image-processing-with-raspberry-pi-and-python-part-ii-spatial-statistics-and-correlations
+#https://makersportal.com/blog/2019/5/6/multiple-object-detection-with-python-and-raspberry-pi
+
 homeDIr = '/home/pi/AI';
 destDir = '/home/pi/AI/uwphotos/';
 
