@@ -5,11 +5,8 @@ import time
 import os
 from subprocess import Popen, PIPE
 
-#https://makersportal.com/blog/2019/4/23/image-processing-with-raspberry-pi-and-python-part-ii-spatial-statistics-and-correlations
-#https://makersportal.com/blog/2019/5/6/multiple-object-detection-with-python-and-raspberry-pi
-
-homeDIr = '/home/pi/AI';
-destDir = '/home/pi/AI/uwphotos/';
+homeDir = '/home/pi/AI';
+destDir = '/home/pi/AI/uwphotos';
 
 count = 0;
 limit = 2;
@@ -30,7 +27,7 @@ while (count < limit):
 
     # Call 'mv' to move the image to the USB drive
     print('---STDERR---');
-    os.system('mv ' + outImg + ' uwphotos')
+    os.system('mv '+ outImg + ' uwphotos')
     print('**** End ****');
 
     count += 1;
